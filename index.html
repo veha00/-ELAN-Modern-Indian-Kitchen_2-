@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ÉLAN | Modern Indian Kitchen</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+
+    <a href="#home" class="brand">
+        <span>✦</span>
+
+        <div>
+            <b>ÉLAN</b>
+            <small>MODERN INDIAN KITCHEN</small>
+        </div>
+    </a>
+
+    <nav id="nav">
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#about">About</a>
+        <a href="#reservation">Reserve</a>
+        <a href="#contact">Contact</a>
+
+        <button class="cart-btn" id="cartBtn">
+            Cart <span id="cartCount">0</span>
+        </button>
+    </nav>
+
+    <button class="hamburger" id="hamburger">☰</button>
+
+</header>
+
+
+<!-- HERO -->
+<section class="hero" id="home">
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+
+        <p class="eyebrow">WELCOME TO ÉLAN</p>
+
+        <h1>
+            A Taste Worth
+            <em>Remembering.</em>
+        </h1>
+
+        <p>
+            Contemporary Indian cuisine, crafted with passion
+            and served with elegance.
+        </p>
+
+        <div class="actions">
+
+            <a href="#menu" class="btn primary">
+                Order Now →
+            </a>
+
+            <a href="#reservation" class="btn ghost">
+                Reserve a Table
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="hero-meta">
+        <span>✦ Fresh Ingredients</span>
+        <span>✦ Authentic Flavours</span>
+        <span>✦ Elegant Ambience</span>
+    </div>
+
+</section>
+
+
+<!-- MENU -->
+<section class="section" id="menu">
+
+    <div class="heading">
+
+        <div>
+            <p class="eyebrow">OUR MENU</p>
+
+            <h2>
+                Explore Our <em>Menu</em>
+            </h2>
+        </div>
+
+        <p>Tap any dish to add it to your order.</p>
+
+    </div>
+
+
+    <div class="tabs" id="tabs">
+
+        <button class="active" data-cat="starters">
+            Starters
+        </button>
+
+        <button data-cat="mains">
+            Mains
+        </button>
+
+        <button data-cat="tandoor">
+            Tandoor
+        </button>
+
+        <button data-cat="desserts">
+            Desserts
+        </button>
+
+        <button data-cat="drinks">
+            Drinks
+        </button>
+
+    </div>
+
+
+    <div class="menu-grid" id="menuGrid"></div>
+
+</section>
+
+
+<!-- ABOUT -->
+<section class="story section" id="about">
+
+    <div class="story-img">
+
+        <img
+        src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=85"
+        alt="Restaurant Interior">
+
+    </div>
+
+
+    <div>
+
+        <p class="eyebrow">ABOUT ÉLAN</p>
+
+        <h2>
+            More Than Just
+            <em>A Meal.</em>
+        </h2>
+
+        <p>
+            ÉLAN brings classic Indian flavours into a contemporary
+            dining experience. Every plate is prepared with carefully
+            selected ingredients, balanced spices and creative flair.
+        </p>
+
+
+        <div class="stats">
+
+            <div>
+                <b>10+</b>
+                <span>Years</span>
+            </div>
+
+            <div>
+                <b>45+</b>
+                <span>Dishes</span>
+            </div>
+
+            <div>
+                <b>4.8★</b>
+                <span>Rating</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FEATURES -->
+<section class="dark-section">
+
+    <div class="heading centered">
+
+        <p class="eyebrow">WHY ÉLAN</p>
+
+        <h2>
+            An Experience
+            <em>Worth Sharing.</em>
+        </h2>
+
+    </div>
+
+
+    <div class="features">
+
+        <article>
+            ✦
+            <h3>Private Dining</h3>
+            <p>
+                Intimate spaces for celebrations
+                and special evenings.
+            </p>
+        </article>
+
+
+        <article>
+            ✦
+            <h3>Family Dining</h3>
+            <p>
+                Warm and comfortable seating
+                for everyone.
+            </p>
+        </article>
+
+
+        <article>
+            ✦
+            <h3>Chef's Selection</h3>
+            <p>
+                Signature dishes curated
+                by our kitchen team.
+            </p>
+        </article>
+
+
+        <article>
+            ✦
+            <h3>Easy Ordering</h3>
+            <p>
+                Order online or send your
+                basket to WhatsApp.
+            </p>
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- RESERVATION -->
+<section class="reservation section" id="reservation">
+
+    <div>
+
+        <p class="eyebrow">BOOK A TABLE</p>
+
+        <h2>
+            Make It
+            <em>Special.</em>
+        </h2>
+
+        <p>
+            Choose your date and time.
+            This demo stores your request in the browser.
+        </p>
+
+    </div>
+
+
+    <form id="reservationForm">
+
+        <div class="two">
+
+            <label>
+                Name
+                <input
+                    id="rName"
+                    required
+                    placeholder="Your name">
+            </label>
+
+
+            <label>
+                Phone
+                <input
+                    id="rPhone"
+                    required
+                    placeholder="+91">
+            </label>
+
+        </div>
+
+
+        <div class="two">
+
+            <label>
+                Date
+                <input
+                    id="rDate"
+                    type="date"
+                    required>
+            </label>
+
+
+            <label>
+                Time
+
+                <select id="rTime">
+
+                    <option>7:00 PM</option>
+                    <option>7:30 PM</option>
+                    <option>8:00 PM</option>
+                    <option>8:30 PM</option>
+                    <option>9:00 PM</option>
+
+                </select>
+
+            </label>
+
+        </div>
+
+
+        <label>
+            Guests
+
+            <select id="rGuests">
+
+                <option>2 Guests</option>
+                <option>3 Guests</option>
+                <option>4 Guests</option>
+                <option>5 Guests</option>
+                <option>6+ Guests</option>
+
+            </select>
+
+        </label>
+
+
+        <button class="btn primary full" type="submit">
+            Confirm Reservation →
+        </button>
+
+        <p class="success" id="reservationMsg"></p>
+
+    </form>
+
+</section>
+
+
+<!-- CONTACT -->
+<section class="contact dark-section" id="contact">
+
+    <div>
+
+        <p class="eyebrow">GET IN TOUCH</p>
+
+        <h2>
+            Come Dine
+            <em>With Us.</em>
+        </h2>
+
+        <p>
+            📍 123 Green Park, Wardha,
+            Maharashtra 442001
+        </p>
+
+        <p>
+            📞 +91 98765 43210
+        </p>
+
+        <p>
+            ✉ hello@elanrestaurant.com
+        </p>
+
+    </div>
+
+
+    <div class="map">
+
+        <iframe
+        src="https://www.google.com/maps?q=Wardha,Maharashtra&output=embed"
+        loading="lazy">
+        </iframe>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+
+    <div>
+        <b>ÉLAN</b>
+        <p>Modern Indian Kitchen</p>
+    </div>
+
+    <div>
+        © <span id="year"></span>
+        ÉLAN. All rights reserved.
+    </div>
+
+</footer>
+
+
+<!-- CART BACKDROP -->
+<div class="drawer-backdrop" id="backdrop"></div>
+
+
+<!-- CART -->
+<aside class="cart" id="cart">
+
+    <div class="cart-head">
+
+        <h2>Your Order</h2>
+
+        <button id="closeCart">×</button>
+
+    </div>
+
+
+    <div id="cartItems" class="cart-items"></div>
+
+
+    <div class="cart-bottom">
+
+        <div class="total">
+
+            <span>Total</span>
+
+            <b id="cartTotal">
+                ₹0
+            </b>
+
+        </div>
+
+
+        <button
+            class="btn primary full"
+            id="checkoutBtn">
+
+            Checkout
+
+        </button>
+
+
+        <button
+            class="btn whatsapp-btn full"
+            id="whatsappBtn">
+
+            Order on WhatsApp
+
+        </button>
+
+
+        <button
+            class="clear"
+            id="clearCart">
+
+            Clear Cart
+
+        </button>
+
+    </div>
+
+</aside>
+
+
+<!-- CHECKOUT MODAL -->
+<div class="modal-backdrop" id="checkoutBackdrop">
+
+    <div class="modal">
+
+        <button
+            class="modal-close"
+            id="closeCheckout">
+
+            ×
+
+        </button>
+
+
+        <p class="eyebrow">
+            CHECKOUT
+        </p>
+
+
+        <h2>
+            Complete Your
+            <em>Order.</em>
+        </h2>
+
+
+        <form id="checkoutForm">
+
+            <label>
+                Full Name
+
+                <input
+                    id="cName"
+                    required
+                    placeholder="Your name">
+
+            </label>
+
+
+            <label>
+                Phone
+
+                <input
+                    id="cPhone"
+                    required
+                    placeholder="+91">
+
+            </label>
+
+
+            <label>
+                Order Type
+
+                <select id="cType">
+
+                    <option>Dine-in</option>
+                    <option>Takeaway</option>
+                    <option>Delivery</option>
+
+                </select>
+
+            </label>
+
+
+            <label>
+
+                Address
+
+                <small>
+                    Required for delivery
+                </small>
+
+                <textarea
+                    id="cAddress"
+                    rows="3"
+                    placeholder="Delivery address">
+                </textarea>
+
+            </label>
+
+
+            <button
+                class="btn primary full"
+                type="submit">
+
+                Place Demo Order
+
+            </button>
+
+
+            <p
+                class="success"
+                id="checkoutMsg">
+            </p>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+<!-- WHATSAPP -->
+<a
+    class="floating-wa"
+    href="https://wa.me/919876543210"
+    target="_blank">
+
+    ☎
+
+</a>
+
+
+<!-- TOP -->
+<button
+    class="top"
+    id="top">
+
+    ↑
+
+</button>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
